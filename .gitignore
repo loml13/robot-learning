@@ -1,0 +1,30 @@
+# ===== 编译产物 =====
+build/
+*.o
+*.a
+*.so
+*.out
+*.dSYM/
+
+# ===== IDE / 工具缓存 =====
+.cache/
+.vscode/ipch/
+compile_commands.json
+.DS_Store
+
+# ===== 大文件 / 版权内容(不入库)=====
+slambook2.pdf
+
+# ===== 编译出的可执行文件(无扩展名,与源文件同名)=====
+# practice 练习
+practice/ch3_eigen/ex01_basics
+practice/ch3_eigen/ex02_rotation
+practice/ch3_eigen/ex03_gimbal_lock
+practice/ch3_eigen/ex04_exercises
+# slambook2 官方示例
+slambook2/coordinateTransform
+slambook2/eigenGeometry
+slambook2/linearEqSolution
+slambook2/matrixExtractAssign
+slambook2/useGeometry
+slambook2/useSophus

@@ -1,42 +1,38 @@
-# slam_train
+# robot-learning
 
-视觉 SLAM 学习仓库 —— 跟随《视觉SLAM十四讲》(高翔)的练习代码与笔记。
+机器人技术学习与练习仓库 —— 覆盖**感知、多模态融合、导航规划**三大方向。
+个人学习用途,跟随经典教材与开源项目动手实践。
 
 ## 目录结构
 
 ```
-slam_train/
-├── practice/          自己写的练习代码与笔记
-│   └── ch3_eigen/     第3章:Eigen 几何模块练习
-│       ├── ex01_basics.cpp           Eigen 基础
-│       ├── ex02_rotation.cpp         旋转向量(轴角)
-│       ├── ex03_gimbal_lock.cpp      万向锁
-│       ├── ex04_exercises.cpp        课后习题(1/3/5/6)
-│       ├── notes_coordinate_transform.md   坐标变换笔记
-│       └── notes_ch3_exercises.md          课后习题笔记
-└── slambook2/         《视觉SLAM十四讲》官方示例代码(参考)
+robot-learning/
+├── perception/        机器人感知
+│   └── visual_slam/   视觉 SLAM(《视觉SLAM十四讲》练习)
+├── fusion/            多模态融合(IMU/视觉/激光融合、滤波、标定)
+├── planning/          导航规划(路径规划、避障、Nav2)
+└── reference/         参考资料与第三方代码
+    └── slambook2/     《视觉SLAM十四讲》官方配套代码
 ```
 
-## 构建
+## 三大方向
 
-练习代码用 CMake 管理(`practice/CMakeLists.txt`),依赖 Eigen3:
-
-```bash
-cd practice
-cmake -B build
-cmake --build build
-```
-
-也可在 VSCode 中直接用「运行」按钮编译单个文件。
+| 方向 | 内容 | 状态 |
+|---|---|---|
+| **perception** 感知 | 视觉/激光 SLAM、特征提取、传感器模型 | 进行中(ch3) |
+| **fusion** 融合 | 多传感器融合、卡尔曼/粒子滤波、外参标定 | 待开始 |
+| **planning** 规划 | 全局/局部路径规划、避障、运动控制 | 待开始 |
 
 ## 环境
 
 - macOS (Apple Silicon) / Homebrew
-- C++17,Eigen3
-- VSCode + clangd
+- C++17,Eigen3;Python 3.10+
+- 构建:CMake;编辑器:VSCode + clangd
+
+各子方向的构建方式见其各自的 README。
 
 ## 致谢
 
-`slambook2/` 为《视觉SLAM十四讲》配套开源代码,版权归原作者高翔所有,
-原仓库:<https://github.com/gaoxiang12/slambook2>(随仓库附 LICENSE)。
+`reference/slambook2/` 为《视觉SLAM十四讲》(高翔)配套开源代码,
+版权归原作者所有,原仓库:<https://github.com/gaoxiang12/slambook2>。
 本仓库仅作个人学习用途。

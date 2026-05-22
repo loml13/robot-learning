@@ -10,7 +10,7 @@
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "macos-clang-arm64",
-            "compileCommands": "${workspaceFolder}/practice/compile_commands.json"
+            "compileCommands": "${workspaceFolder}/perception/visual_slam/compile_commands.json"
         }
     ],
     "version": 4

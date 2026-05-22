@@ -13,18 +13,18 @@ compile_commands.json
 .DS_Store
 
 # ===== 大文件 / 版权内容(不入库)=====
-slambook2.pdf
+reference/slambook2.pdf
 
 # ===== 编译出的可执行文件(无扩展名,与源文件同名)=====
-# practice 练习
-practice/ch3_eigen/ex01_basics
-practice/ch3_eigen/ex02_rotation
-practice/ch3_eigen/ex03_gimbal_lock
-practice/ch3_eigen/ex04_exercises
+# perception/visual_slam 练习
+perception/visual_slam/ch3_eigen/ex01_basics
+perception/visual_slam/ch3_eigen/ex02_rotation
+perception/visual_slam/ch3_eigen/ex03_gimbal_lock
+perception/visual_slam/ch3_eigen/ex04_exercises
 # slambook2 官方示例
-slambook2/coordinateTransform
-slambook2/eigenGeometry
-slambook2/linearEqSolution
-slambook2/matrixExtractAssign
-slambook2/useGeometry
-slambook2/useSophus
+reference/slambook2/coordinateTransform
+reference/slambook2/eigenGeometry
+reference/slambook2/linearEqSolution
+reference/slambook2/matrixExtractAssign
+reference/slambook2/useGeometry
+reference/slambook2/useSophus

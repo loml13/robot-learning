@@ -14,6 +14,7 @@ compile_commands.json
 
 # ===== 大文件 / 版权内容(不入库)=====
 reference/slambook2.pdf
+reference/barfoot_state_estimation.pdf
 
 # ===== 编译出的可执行文件(无扩展名,与源文件同名)=====
 # perception/visual_slam 练习

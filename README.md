@@ -49,6 +49,9 @@ git submodule update --remote reference/FAST_LIO
 
 ## 致谢
 
-`reference/slambook2/` 为《视觉SLAM十四讲》(高翔)配套开源代码,
-版权归原作者所有,原仓库:<https://github.com/gaoxiang12/slambook2>。
-本仓库仅作个人学习用途。
+本仓库的学习与实践参考了以下教材与开源项目,版权归原作者所有,仅作个人学习用途:
+
+- **《视觉SLAM十四讲》**(高翔)—— 配套开源代码见 `reference/slambook2/`,原仓库 <https://github.com/gaoxiang12/slambook2>
+- **《State Estimation for Robotics》**(Timothy D. Barfoot)—— 机器人状态估计经典教材,
+  电子版见 `reference/barfoot_state_estimation.pdf`,由作者主页免费发布 <http://asrl.utias.utoronto.ca/~tdb/>
+- **FAST-LIO**(HKU-MARS)—— 紧耦合激光-惯性里程计,见子模块 `reference/FAST_LIO/`,原仓库 <https://github.com/hku-mars/FAST_LIO>

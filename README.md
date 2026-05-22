@@ -12,7 +12,23 @@ robot-learning/
 ├── fusion/            多模态融合(IMU/视觉/激光融合、滤波、标定)
 ├── planning/          导航规划(路径规划、避障、Nav2)
 └── reference/         参考资料与第三方代码
-    └── slambook2/     《视觉SLAM十四讲》官方配套代码
+    ├── slambook2/     《视觉SLAM十四讲》官方配套代码
+    └── FAST_LIO/      紧耦合激光-惯性里程计(git 子模块)
+```
+
+## 克隆与子模块
+
+`reference/FAST_LIO/` 是 git 子模块,**普通克隆后该目录为空**,需初始化:
+
+```bash
+# 克隆时连同子模块一起拉取
+git clone --recurse-submodules <repo-url>
+
+# 或克隆后再初始化
+git submodule update --init reference/FAST_LIO
+
+# 拉取子模块上游更新
+git submodule update --remote reference/FAST_LIO
 ```
 
 ## 三大方向

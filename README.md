@@ -41,7 +41,7 @@ git submodule update --remote reference/FAST_LIO
 
 ## 环境
 
-- macOS (Apple Silicon) / Homebrew
+- macOS (Apple Silicon) / Ubuntu 22.04
 - C++17,Eigen3;Python 3.10+
 - 构建:CMake;编辑器:VSCode + clangd
 
